@@ -1,0 +1,50 @@
+body {
+    background: black;
+    min-width: 1074px;
+    width: 100%;
+}
+
+*{
+    margin: 0;
+    font-family: $font-stack;
+    font-size: $basic-font-size;
+
+    &::selection {
+        background: #333333;
+    }
+}
+
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.headline {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+
+    &--h1 {
+        font-size: $h1-font-size;
+        letter-spacing: 2px;
+    }
+
+    &--h2 {
+        font-weight: normal;
+        font-size: $h2-font-size;
+        padding-top: 48px;
+        padding-bottom: 21px;
+    }
+
+    &--h3 {
+        font-weight: normal;
+        font-size: $h2-font-size;
+        padding-top: 48px;
+        padding-bottom: 21px;
+    }
+}
