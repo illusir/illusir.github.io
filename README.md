@@ -1,1 +1,1 @@
-# denta-page
+# pet project
