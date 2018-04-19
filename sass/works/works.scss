@@ -1,0 +1,26 @@
+.works-list {
+    @include flex ();
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    padding-top: 80px;
+    padding-bottom: 48px;
+
+    &__item {
+    background: $dark-grey;
+    width: 232px;
+    height: 232px;
+    margin-bottom: 32px;
+    margin-right: 32px;
+    filter: grayscale(100%) brightness(50%);
+    cursor: pointer;
+
+        &:nth-child(4n+4) {
+            margin-right: 0;
+        }
+
+        &:hover {
+            filter: none;
+        }
+    }
+}

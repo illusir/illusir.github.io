@@ -1,6 +1,6 @@
 body {
-    background: black;
-    min-width: 1074px;
+    background: #000;
+    min-width: 1078px;
     width: 100%;
 }
 
@@ -8,12 +8,14 @@ body {
     margin: 0;
     font-family: $font-stack;
     font-size: $basic-font-size;
+    color: white;
+    font-weight: 200;
+    text-align: center;
 
     &::selection {
         background: #333333;
     }
 }
-
 
 .container {
     width: 1024px;
@@ -22,6 +24,7 @@ body {
 
 .link {
     text-decoration: none;
+    color: white;
 }
 
 .headline {
@@ -32,13 +35,14 @@ body {
     &--h1 {
         font-size: $h1-font-size;
         letter-spacing: 2px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     &--h2 {
-        font-weight: normal;
         font-size: $h2-font-size;
-        padding-top: 48px;
-        padding-bottom: 21px;
+        letter-spacing: 2px;
+        padding-top: 60px;
     }
 
     &--h3 {
@@ -47,4 +51,10 @@ body {
         padding-top: 48px;
         padding-bottom: 21px;
     }
+}
+
+.text {
+    padding: 0 232px;
+    padding-top: 56px;
+    line-height: 32px;
 }

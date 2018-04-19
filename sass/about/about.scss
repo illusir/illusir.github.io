@@ -1,0 +1,14 @@
+.avatar-frame {
+    @include flex ();
+    height: 164px;
+    background: url('../images/svg/wow-frame-desktop.svg') no-repeat center;
+    align-items: center;
+    justify-content: center;
+
+    &__img {
+        width: 144px;
+        height: 144px;
+        background: url('../images/images/example-ava.jpg') no-repeat center;
+        border-radius: 50%;
+    }
+}

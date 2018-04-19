@@ -19,7 +19,7 @@
     <meta name="theme-color" content="#ffffff">
     <!--favicons-->
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <title>Illusir's Portfolio</title>
 </head>
 
@@ -29,5 +29,108 @@
 
 <header class="header">
     <div class="container container--header">
+        <div class="header__content">
+            <a class="logo" href="./index.html">
+                Illusir
+            </a>
+            <nav class="nav">
+                <a class="nav__link" href="#about">
+                    About
+                </a>
+                <a class="nav__link" href="#works">
+                    Works
+                </a>
+                <a class="nav__link" href="#contact">
+                    Contact
+                </a>
+            </nav>
+        </div>
     </div>
 </header>
+
+<!--1st-screen-->
+
+<div class="1st-screen">
+    <div class="container container--1st-screen">
+        <a class="arrow-down" href="#about">
+        </a>
+    </div>
+</div>
+
+<!--about-->
+
+<div class="about" id="about">
+    <div class="container container--about">
+        <h1 class="headline headline--h1">
+            Hey there!
+        </h1>
+        <div class="avatar-frame">
+            <div class="avatar-frame__img">
+            </div>
+        </div>
+        <p class="text">
+            My nickname is Illusir (who needs those real names anyway).
+            I’m a designer, hobbyist illustrator living online.
+            Experienced in design and illustration with a degree in memes! See my works below!
+        </p>
+    </div>
+</div>
+
+<!--works-->
+
+<div class="works" id="works">
+    <div class="container container--works">
+        <div class="works-list">
+            <div class="works-list__item works-list__item--pic1">
+                <img src="./images/portfolio/portfolio-img-1.jpg" alt="work1" title="work1"/>
+            </div>
+            <div class="works-list__item works-list__item--pic2">
+                <img src="./images/portfolio/portfolio-img-2.jpg" alt="work2" title="work2"/>
+            </div>
+            <div class="works-list__item works-list__item--pic3">
+                <img src="./images/portfolio/portfolio-img-3.jpg" alt="work3" title="work3"/>
+            </div>
+            <div class="works-list__item works-list__item--pic4">
+                <img src="./images/portfolio/portfolio-img-4.jpg" alt="work4" title="work4"/>
+            </div>
+            <div class="works-list__item works-list__item--pic5">
+                <img src="./images/portfolio/portfolio-img-1.jpg" alt="work1" title="work1"/>
+            </div>
+            <div class="works-list__item works-list__item--pic6">
+                <img src="./images/portfolio/portfolio-img-2.jpg" alt="work2" title="work2"/>
+            </div>
+            <div class="works-list__item works-list__item--pic7">
+                <img src="./images/portfolio/portfolio-img-3.jpg" alt="work3" title="work3"/>
+            </div>
+            <div class="works-list__item works-list__item--pic8">
+                <img src="./images/portfolio/portfolio-img-4.jpg" alt="work4" title="work4"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--contact-->
+
+<div class="contact" id="contact">
+    <div class="container container--contact">
+        <div class="so">
+        </div>
+        <h1 class="headline headline--h2">
+            like what you see?
+        </h1>
+        <p class="text">
+            Why not to commission me? I’ll bring pawsomeness into your life! Web-design, illustration, banners...
+            You need them, I need money (I mean work, I need work!). So, why not help each other? Go on, drop a message!
+            My messenger pigeon will deliver it no problem!
+        </p>
+        <form class=feedback-form>
+            <div class="feedback-form__row feedback-form__row--personal">
+                <input name="name" type="text" class="feedback-form__input feedback-form__input--personal" placeholder="Name">
+                <input name="e-mail" type="text" class="feedback-form__input feedback-form__input--personal" placeholder="E-mail">
+            </div>
+            <div class="feedback-form__row feedback-form__row--message">
+                <textarea name="name" placeholder="Message" resize="none" class="feedback-form__input feedback-form__input--message"></textarea>
+            </div>
+        </form>
+    </div>
+</div>

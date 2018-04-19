@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/illusir/denta-page.git"
+    "url": "git+https://github.com/illusir/illusir.github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/illusir/denta-page/issues"
+    "url": "https://github.com/illusir/illusir.github.io/issues"
   },
-  "homepage": "https://github.com/illusir/denta-page#readme",
+  "homepage": "https://github.com/illusir/illusir.github.io#readme",
   "devDependencies": {
     "browser-sync": "^2.23.5",
     "gulp": "^3.9.1",

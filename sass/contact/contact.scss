@@ -1,0 +1,51 @@
+.so {
+    height: 64px;
+    background: url('../images/svg/so.svg') no-repeat center;
+}
+
+.feedback-form {
+padding-top: 80px;
+
+    &__input {
+        background: black;
+        border: 7px solid $dark-grey;
+        text-align: left;
+        padding-left: 16px;
+        box-sizing: border-box;
+
+        &::placeholder {
+            color: #333333;
+        }
+
+        &--personal {
+        height: 56px;
+        width: 320px;
+        margin-right: 32px;
+        }
+
+        &--message {
+        height: 112px;
+        width: 672px;
+        margin-top: 32px;
+        padding-top: 9px;
+
+        }
+
+        &:focus {
+            border: 7px solid $mid-grey;
+            outline: none;
+        }
+
+        &:nth-child(even) {
+            margin-right: 0;
+        }
+    }
+
+    &__row {
+
+        &--personal {
+            @include flex ();
+            justify-content: center;
+        }
+    }
+}

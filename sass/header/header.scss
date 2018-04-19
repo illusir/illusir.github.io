@@ -1,0 +1,29 @@
+.header__content {
+    height: 70px;
+    @include flex ();
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $dark-grey;
+    position: fixed;
+    width: 1024px;
+    z-index: 2;
+    background: black;
+}
+
+.nav__link {
+    color: white;
+    margin-left: 32px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+
+    &:hover {
+        border-bottom: 1px solid white;
+        padding-bottom: 25px;
+    }
+}
+
+.logo {
+    text-transform: uppercase;
+    text-decoration: none;
+}
