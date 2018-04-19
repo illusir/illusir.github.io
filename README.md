@@ -1,1 +1,1 @@
-# pet project
+# pet project and non-commercial training
