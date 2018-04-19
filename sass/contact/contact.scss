@@ -14,7 +14,7 @@ padding-top: 80px;
         box-sizing: border-box;
 
         &::placeholder {
-            color: #333333;
+            color: white;
         }
 
         &--personal {
@@ -27,8 +27,8 @@ padding-top: 80px;
         height: 112px;
         width: 672px;
         margin-top: 32px;
+        margin-bottom: 32px;
         padding-top: 9px;
-
         }
 
         &:focus {
@@ -48,4 +48,22 @@ padding-top: 80px;
             justify-content: center;
         }
     }
+
+    &__button {
+        height: 56px;
+        width: 232px;
+        background: $dark-grey;
+        border: none;
+        text-transform: uppercase;
+        outline: none;
+
+        &:hover {
+            background: $mid-grey;
+        }
+    }
+}
+
+.pigeon {
+    height: 600px;
+    background: url('../images/images/pigeon.jpg') no-repeat center;
 }

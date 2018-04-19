@@ -1,0 +1,30 @@
+.footer__content {
+    height: 90px;
+    @include flex ();
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid $dark-grey;
+    width: 1024px;
+
+    &--bottom {
+        justify-content: center;
+    }
+}
+
+.copyright {
+    text-transform: uppercase;
+}
+
+.disclaimer {
+    color: $mid-grey;
+}
+
+.disclaimer a {
+    color: $mid-grey;
+    text-decoration: none;
+    border-bottom: 1px solid $mid-grey;
+}
+
+.disclaimer a:hover {
+    border: none;
+}

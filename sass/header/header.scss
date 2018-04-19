@@ -1,5 +1,5 @@
 .header__content {
-    height: 70px;
+    height: 90px;
     @include flex ();
     align-items: center;
     justify-content: space-between;
@@ -19,7 +19,7 @@
 
     &:hover {
         border-bottom: 1px solid white;
-        padding-bottom: 25px;
+        padding-bottom: 35px;
     }
 }
 
