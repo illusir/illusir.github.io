@@ -58,3 +58,10 @@ body {
     padding-top: 56px;
     line-height: 32px;
 }
+
+:target:before {
+    content:"";
+    display:block;
+    height:90px;
+    margin:-90px 0 0;
+}
