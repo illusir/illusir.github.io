@@ -11,10 +11,6 @@ body {
     color: white;
     font-weight: 200;
     text-align: center;
-
-    &::selection {
-        background: #333333;
-    }
 }
 
 .container {
@@ -64,4 +60,8 @@ body {
     display:block;
     height:90px;
     margin:-90px 0 0;
+}
+
+textarea {
+    resize: none;
 }
