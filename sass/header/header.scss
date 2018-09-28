@@ -27,3 +27,72 @@
     text-transform: uppercase;
     text-decoration: none;
 }
+
+.burger {
+    display: none;
+    cursor: pointer;
+    padding-right: 40px;
+
+    &__bar {
+        width: 24px;
+        height: 2px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.3s;
+    }
+}
+
+.change .burger__bar--first {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.change .burger__bar--second {
+    opacity: 0;
+}
+
+.change .burger__bar--last {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+/* mobile */
+
+@media screen and (min-width: 320px) and (max-width: 568px) {
+
+.header__content {
+    height: 50px;
+    width: 100%;
+}
+
+.nav {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 52px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    overflow: auto;
+
+    .nav__link {
+        margin-left: 16px;
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+
+        &:hover {
+            border-bottom: 1px solid white;
+            padding-bottom: 15px;
+        }
+    }
+}
+
+.nav-open .nav {
+    display: block;
+}
+
+.burger {
+    display: block;
+}
+
+}
