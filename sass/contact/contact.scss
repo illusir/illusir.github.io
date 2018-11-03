@@ -1,0 +1,70 @@
+.so {
+    height: 64px;
+    margin-top: 60px;
+    background: url('../images/SVG/so.svg') no-repeat center;
+}
+
+.feedback-form {
+padding-top: 80px;
+
+    &__input {
+        background: black;
+        border: 7px solid $dark-grey;
+        text-align: left;
+        padding-left: 16px;
+        box-sizing: border-box;
+
+        &::placeholder {
+            color: white;
+        }
+
+        &--personal {
+        height: 56px;
+        width: 320px;
+        margin-right: 32px;
+        }
+
+        &--message {
+        height: 112px;
+        width: 672px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        padding-top: 9px;
+        }
+
+        &:focus {
+            border: 7px solid $mid-grey;
+            outline: none;
+        }
+
+        &:nth-child(even) {
+            margin-right: 0;
+        }
+    }
+
+    &__row {
+
+        &--personal {
+            @include flex ();
+            justify-content: center;
+        }
+    }
+
+    &__button {
+        height: 56px;
+        width: 232px;
+        background: $dark-grey;
+        border: none;
+        text-transform: uppercase;
+        outline: none;
+
+        &:hover {
+            background: $mid-grey;
+        }
+    }
+}
+
+.pigeon {
+    height: 600px;
+    background: url('../images/images/pigeon.jpg') no-repeat center;
+}
