@@ -1,21 +1,25 @@
-$font-stack: 'Open Sans', sans-serif;
+@import "../static/fonts/fonts.css";
 
-$basic-font-size: 16px;
+$font-stack: 'Red Hat Display', sans-serif;
 
-$basic-font-size-mobile: 14px;
+$basic-font-size: 18px;
 
-$h1-font-size: 32px;
+$h1-font-size: 100px;
 
-$h1-font-size-mobile: 24px;
+$h1-font-size-mobile: 85px;
 
-$h2-font-size: 32px;
+$h2-font-size: 100px;
 
-$h2-font-size-mobile: 24px;
+$h2-font-size-mobile: 85px;
 
-$h3-font-size: 32px;
+$h3-font-size: 50px;
 
-$h3-font-size-mobile: 24px;
+$h3-font-size-mobile: 30px;
 
-$dark-grey: #1a1a1a;
+$decorative-font-size: 20px;
 
-$mid-grey: #333333;
+$black: black;
+
+$dark-grey: #252525;
+
+$white: white;

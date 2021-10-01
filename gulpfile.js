@@ -28,14 +28,16 @@ gulp.task('default', function() {
 });
 
 // Задача для автозапуска нужных подзадач
-gulp.task('watch', function () {
-    gulp.watch('sass/**/*.scss', ['sass']);
+
+gulp.task('watch', function() {
+    gulp.watch('sass/**/*.scss', gulp.series('sass'));
     gulp.watch([
         '*.html',
         'src/*.css',
         'sass/**/*.scss'
     ]).on('change', browserSync.reload);
-});
+
+    });
 
 // Запуск BrowserSync
 gulp.task('server', function() {
@@ -55,7 +57,7 @@ gulp.task('sass', function () {
     ])
         .pipe(gulpif(ENV != 'production', sourceMaps.init()))
         .pipe(sass.sync().on('error', sass.logError))
-        .pipe(autoprefixer({browsers: ['last 10 versions'], cascade: false}))
+        .pipe(autoprefixer())
         .pipe(cleanCSS())
         .pipe(concat('./src/style.css'))
         .pipe(gulpif(ENV != 'production', sourceMaps.write()))

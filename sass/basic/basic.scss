@@ -7,44 +7,74 @@ body {
     margin: 0;
     font-family: $font-stack;
     font-size: $basic-font-size;
-    color: white;
-    font-weight: 200;
-    text-align: center;
+    color: $white;
 }
 
+::selection {
+    background: $dark-grey;
+  }
+
 .container {
-    width: 1024px;
+    width: 1180px;
     margin: 0 auto;
+
+    &--1st-screen {
+        padding-top: 80px;
+        padding-bottom: 65px;
+    }
 }
 
 .link {
     text-decoration: none;
-    color: white;
+    color: $white;
+}
+
+.note-field {
+    @include flex();
+    flex-flow: row;
+
+    &__image {
+        width: 22px;
+        height: 22px;
+        margin-right: 10px;
+        background: url('../static/images/SVG/sprite.svg') no-repeat 0 -159px;
+    }
+
+    &__font {
+        font-size: $decorative-font-size;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
 }
 
 .headline {
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: white;
+    color: $white;
 
     &--h1 {
         font-size: $h1-font-size;
         letter-spacing: 2px;
-        padding-top: 60px;
+        padding-top: 10px;
         padding-bottom: 60px;
+        line-height: 100%;
+        font-weight: 900;
     }
 
     &--h2 {
         font-size: $h2-font-size;
         letter-spacing: 2px;
-        padding-top: 60px;
+        line-height: 100%;
+        font-weight: 900;
     }
 
     &--h3 {
         font-weight: normal;
-        font-size: $h2-font-size;
-        padding-top: 48px;
-        padding-bottom: 21px;
+        font-size: $h3-font-size;
+        line-height: 100%;
+        font-weight: bold;
     }
 }
 
@@ -61,10 +91,6 @@ body {
     margin:-90px 0 0;
 }
 
-textarea {
-    resize: none;
-}
-
 /* mobile */
 
 @media screen and (min-width: 320px) and (max-width: 568px) {
@@ -74,14 +100,11 @@ textarea {
     padding: 0 20px;
 }
 
-*{
-    font-size: $basic-font-size-mobile;
-}
-
 .headline {
 
     &--h1 {
         font-size: $h1-font-size-mobile;
+        font-weight: 900;
         padding-top: 38px;
         padding-bottom: 38px;
     }

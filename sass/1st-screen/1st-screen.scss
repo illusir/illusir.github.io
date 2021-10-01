@@ -1,29 +1,7 @@
-.container--1st-screen {
-    height: 100vh;
-    width: 100%;
-   }
 
-.arrow-down {
-    position: absolute;
-    background: url('../images/SVG/arrow-down.svg') center no-repeat;
-    bottom: 40px;
-    width: 24px;
-    height: 12px;
-    left: calc(50% - 12px);
-}
 
 /* mobile */
 
 @media screen and (min-width: 320px) and (max-width: 568px) {
-
-    .container--1st-screen {
-        background: url('../images/images/first-screen-mobile.jpg') no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-    .arrow-down {
-        bottom: 20px;
-    }
 
 }

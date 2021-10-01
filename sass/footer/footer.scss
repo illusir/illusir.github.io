@@ -3,7 +3,7 @@
     @include flex ();
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid $dark-grey;
+    border-top: 1px solid $white;
     width: 1024px;
 
     &--bottom {
@@ -17,13 +17,13 @@
 }
 
 .disclaimer {
-    color: $mid-grey;
+    color: $white;
 }
 
 .disclaimer a {
-    color: $mid-grey;
+    color: $white;
     text-decoration: none;
-    border-bottom: 1px solid $mid-grey;
+    border-bottom: 1px solid $white;
 }
 
 .disclaimer a:hover {
