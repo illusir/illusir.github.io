@@ -1,10 +1,8 @@
 .footer__content {
-    height: 90px;
     @include flex ();
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid $white;
-    width: 1024px;
+    width: 1180px;
 
     &--bottom {
         justify-content: center;
@@ -14,18 +12,5 @@
 .copyright {
     text-transform: uppercase;
     font-size: 14px;
-}
-
-.disclaimer {
-    color: $white;
-}
-
-.disclaimer a {
-    color: $white;
-    text-decoration: none;
-    border-bottom: 1px solid $white;
-}
-
-.disclaimer a:hover {
-    border: none;
+    font-weight: bold;
 }

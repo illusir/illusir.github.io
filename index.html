@@ -64,7 +64,7 @@
 
     <!--header-->
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="container container--header">
             <div class="header__content">
                 <div class="logo"> 
@@ -87,7 +87,7 @@
     <div class="1st-screen">
         <div class="container container--1st-screen">
             <div class="note-field">
-                <div class="note-field__image"></div>
+                <div class="note-field__image note-field__image--1st-screen"></div>
                 <span class="note-field__font">Hi, I'm illusir</span>
             </div>
             <h1 class="headline headline--h1">
@@ -100,6 +100,9 @@
 
     <div class="works" id="works">
         <div class="container container--works">
+            
+            <!--work container-->
+
             <div class="work">
                 <div class="left-info">
                     <div class="hover-helper">
@@ -107,12 +110,69 @@
                             <h3 class="headline headline--h3 work-headline">Austin wellness</h3>
                             <div class="work-link"></div>
                         </div>
-                        <div class="left-info__picture"></div>
+                        <div class="left-info__picture left-info__picture--first">
+                            <img src="./static/images/images/portfolio/covers/austin-wellness-cover.jpg" alt="Work #1"/>
+                        </div>
                     </div>
-                    <div class="left-info__notes">123</div>
+                    <div class="left-info__notes">
+                        <div class="note-headline">Other people involved</div>
+                        <div class="note-content">Artem Rezinkin - Art Director</div>
+                    </div>
                 </div>
-                <div class="right-info"></div>
+                <div class="right-info">
+                    <div class="right-info__notes right-info__notes--client">
+                        <div class="note-headline">Client</div>
+                        <div class="note-content">Chiropractic Clinic</div>
+                    </div>
+                    <div class="right-info__notes right-info__notes--what">
+                        <div class="note-headline">What</div>
+                        <div class="note-content">Website design</div>
+                    </div>
+                    <div class="right-info__notes right-info__notes--role">
+                        <div class="note-headline">Role</div>
+                        <div class="note-content">Web-designer</div>
+                    </div>
+                    <div class="right-info__notes right-info__notes--agency">
+                        <div class="note-headline">Agency</div>
+                        <div class="note-content">Directline Development</div>
+                    </div>
+                </div>
             </div>
+
+            <!--work container-->
+
+            <div class="work">
+                <div class="left-info">
+                    <div class="hover-helper">
+                        <div class="left-info__top">
+                            <h3 class="headline headline--h3 headline--work">United Hail Pros</h3>
+                            <div class="work-link"></div>
+                        </div>
+                        <div class="left-info__picture left-info__picture--first">
+                            <img src="./static/images/images/portfolio/covers/united-hail-cover.jpg" alt="Work #2"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-info">
+                    <div class="right-info__notes right-info__notes--client">
+                        <div class="note-headline">Client</div>
+                        <div class="note-content">Hail Damage Repair Company</div>
+                    </div>
+                    <div class="right-info__notes right-info__notes--what">
+                        <div class="note-headline">What</div>
+                        <div class="note-content">Website design</div>
+                    </div>
+                    <div class="right-info__notes right-info__notes--role">
+                        <div class="note-headline">Role</div>
+                        <div class="note-content">Web-designer</div>
+                    </div>
+                    <div class="right-info__notes right-info__notes--agency">
+                        <div class="note-headline">Agency</div>
+                        <div class="note-content">Directline Development</div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -120,15 +180,45 @@
 
     <div class="about" id="about">
         <div class="container container--about">
-            <div class="avatar-frame">
-                <div class="avatar-frame__img">
+            <div class="note-field">
+                <div class="note-field__image note-field__image--about"></div>
+                <span class="note-field__font">Just a few things</span>
+            </div>
+            <h2 class="headline headline--h2">
+                About Me
+            </h2>
+
+            <div class="skills">
+                <div class="skills__item">
+                    <h3 class="headline headline--h3 headline--skill">Educated</h3>
+                    <span>as a designer</span>
+                </div>
+                <div class="skills__item">
+                    <h3 class="headline headline--h3 headline--skill">10 years</h3>
+                    <span>of overall design experience</span>
+                </div>
+                <div class="skills__item">
+                    <h3 class="headline headline--h3 headline--skill">English</h3>
+                    <span>isn’t a problem for me</span>
+                </div>
+                <div class="skills__item">
+                    <h3 class="headline headline--h3 headline--skill">Web</h3>
+                    <span>is my main focus</span>
+                </div>
+                <div class="skills__item">
+                    <h3 class="headline headline--h3 headline--skill">Print</h3>
+                    <span>is what I’m familiar with</span>
+                </div>
+                <div class="skills__item">
+                    <h3 class="headline headline--h3 headline--skill">Code & 3d</h3>
+                    <span>is what I’m learning</span>
                 </div>
             </div>
-            <p class="text">
-                My nickname is Illusir (who needs those real names anyway).
-                I’m a designer, hobbyist illustrator living online.
-                Experienced in design and illustration with a degree in memes! See my works below!
-            </p>
+            <div class="tools">
+                <div class ="tools__item tools__item--figma"></div>
+                <div class ="tools__item tools__item--photoshop"></div>
+                <div class ="tools__item tools__item--illustrator"></div>
+            </div>
         </div>
     </div>
 
@@ -137,17 +227,14 @@
     <footer class="footer">
         <div class="container container--footer">
             <div class="footer__content footer__content--top">
-                <span class="copyright">
-                    Designed and coded by illusir in 2018
-                </span>
                 <nav class="nav nav--bottom">
-                    <a class="nav__link nav__link--bottom" href="https://illusir.deviantart.com/">
-                        My deviantart
-                    </a>
-                    <a class="nav__link nav__link--bottom" href="https://www.instagram.com/illusir/">
-                        My instagram
+                    <a class="nav__link nav__link--bottom" href="#header">
+                        Back to top
                     </a>
                 </nav>
+                <span class="copyright">
+                    Designed and coded by illusir
+                </span>
             </div>
             </div>
     </footer>

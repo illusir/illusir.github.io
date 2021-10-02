@@ -1,14 +1,41 @@
-.avatar-frame {
-    @include flex ();
-    height: 164px;
-    background: url('../images/SVG/wow-frame-desktop.svg') no-repeat center;
-    align-items: center;
-    justify-content: center;
+.skills {
+    @include flex();
+    flex-flow: wrap;
+    padding-top: 80px;
+    justify-content: space-between;
 
-    &__img {
-        width: 144px;
-        height: 144px;
-        background: url('../images/images/example-ava.jpg') no-repeat center;
-        border-radius: 50%;
+    &__item {
+        @include flex();
+        flex-flow: column; 
+        width: 380px;
+        padding-bottom: 60px;
+    }
+}
+
+.tools {
+    @include flex();
+    flex-flow: wrap;
+    padding-top: 80px;
+
+    &__item {
+        width: 80px;
+        height: 80px;
+        margin-right: 60px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &--figma {
+            background: $dark-grey url('../static/images/SVG/sprite.svg') no-repeat 0 -78px;
+        }
+
+        &--photoshop {
+            background: $dark-grey url('../static/images/SVG/sprite.svg') no-repeat -80px -78px;
+        }
+
+        &--illustrator {
+            background: $dark-grey url('../static/images/SVG/sprite.svg') no-repeat -160px -78px;
+        }
     }
 }

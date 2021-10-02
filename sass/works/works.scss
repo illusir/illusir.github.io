@@ -1,9 +1,19 @@
 .work {
+    width: 100%;
     @include flex ();
     flex-flow: row;
-    align-content: space-between;
-    justify-content: flex-start;
-    padding-top: 65px;}
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 0 60px 0;
+
+    &:first-child {
+        padding-top: 80px;
+    }
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
 
 .left-info {
 
@@ -17,12 +27,40 @@
     }
 
     &__picture {
-    background: $dark-grey;
-    width: 780px;
-    height: 445px;
-    margin-bottom: 30px;
+        background: $dark-grey;
+        width: 780px;
+        height: 445px;
+        margin-bottom: 30px;
+        overflow: hidden;
     }
 
+    &__picture img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+
+    &__notes {
+        width: 100%;
+        @include flex ();
+        flex-flow: column; 
+    }
+
+}
+
+.right-info {
+    width: 280px;
+
+    &__notes {
+        padding-bottom: 30px;
+    }
+}
+
+.note-headline {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-bottom: 7px;
 }
 
 .work-link {
@@ -44,10 +82,14 @@
 
     &:hover .work-headline {
         border-bottom: 1px solid $white;
-        }
-
-    &:hover .left-info__picture {
-        opacity: .8;
     }
+
+    &:hover .left-info__picture img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+    }
+
 }
 
