@@ -43,5 +43,8 @@
     "android >= 4",
     "bb >= 10"
   ],
-  "server": "gulp server"
+  "server": "gulp server",
+  "dependencies": {
+    "lodash.template": "^4.5.0"
+  }
 }

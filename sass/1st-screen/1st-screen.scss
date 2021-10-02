@@ -1,4 +1,52 @@
+.arrow-back {
+    width: 30px;
+    height: 30px;
+    padding-bottom: 30px;
+    background: url('../static/images/SVG/sprite.svg') no-repeat -240px -78px;
+}
 
+.headline-field {
+    @include flex();
+    flex-flow: row;
+    justify-content: space-between;
+
+    &__headline {
+        width: 1000px;
+    }
+
+    &__link {
+        @include flex();
+        flex-flow: row;
+        align-items: center;
+
+        &:hover .link-icon {
+            background: $white url('../static/images/SVG/sprite.svg') no-repeat -237px 0;
+        }
+    }
+}
+
+.headline-field a {
+    text-decoration: none;
+}
+
+.link-icon {
+    width: 50px;
+    height: 50px;
+    border: 1px solid $white;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: url('../static/images/SVG/sprite.svg') no-repeat -137px 0;
+}
+
+.top-info {
+    @include flex;
+    flex-flow: row;
+    padding-top: 60px;
+
+    &__notes {
+        margin-right: 60px;
+    }
+}
 
 /* mobile */
 
