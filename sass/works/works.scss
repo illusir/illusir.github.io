@@ -80,10 +80,6 @@
         background: $white url('../static/images/SVG/sprite.svg') no-repeat -187px 0;
     }
 
-    &:hover .work-headline {
-        border-bottom: 1px solid $white;
-    }
-
     &:hover .left-info__picture img {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
