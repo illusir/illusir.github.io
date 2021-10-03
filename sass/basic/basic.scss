@@ -9,6 +9,7 @@ body {
     font-size: $basic-font-size;
     color: $white;
     scroll-behavior: smooth;
+    line-height: 140%;
 }
 
 ::selection {
@@ -30,6 +31,10 @@ body {
 
     &--1st-screen-internal {
         padding-top: 20px;
+    }
+
+    &--single-work {
+        padding-top: 0;
     }
 
 }

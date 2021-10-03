@@ -1,0 +1,69 @@
+.project-notes {
+    width: 800px;
+    margin-bottom: 80px;
+}
+
+.pictures {
+    @include flex ();
+    flex-flow: wrap;
+    justify-content: space-between;
+
+    &__full {
+        width: 100%;
+        height: 670px;
+        margin-bottom: 30px;
+        background-color: $dark-grey;
+
+        &--top-1 {
+            background: url("../static/images/images/portfolio/austin-wellness/top.jpg") no-repeat center;
+            background-size: contain;
+        }
+
+        &--bottom-1 {
+            background: url("../static/images/images/portfolio/austin-wellness/bottom.jpg") no-repeat center;
+            background-size: contain;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__half {
+        width: calc((100% / 2) - 20px);
+        height: 400px;
+        background-color: $dark-grey;
+        margin-bottom: 40px;
+
+        &--one-1 {
+            background: url("../static/images/images/portfolio/austin-wellness/half-one.jpg") no-repeat center;
+            background-size: contain;
+        }
+
+        &--two-1 {
+            background: url("../static/images/images/portfolio/austin-wellness/half-two.jpg") no-repeat center;
+            background-size: contain;
+        }
+
+        &--three-1 {
+            background: url("../static/images/images/portfolio/austin-wellness/half-three.jpg") no-repeat center;
+            background-size: contain;
+        }
+
+        &--four-1 {
+            background: url("../static/images/images/portfolio/austin-wellness/half-four.jpg") no-repeat center;
+            background-size: contain;
+        }
+    }
+}
+
+.bottom-notes {
+    
+    &__note {
+        padding: 40px 0 60px 0;
+    }
+
+    &__disclaimer {
+        opacity: .5;
+    }
+}
