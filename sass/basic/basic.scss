@@ -122,35 +122,44 @@ body {
 
     .container {
         width: 100%;
-        padding: 0 20px;
+        padding: 80px 20px;
+        box-sizing: border-box;
+
+        &--header {
+            padding: 10px 20px 10px 20px;
+        }
+
+        &--1st-screen {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        &--works {
+            padding: 0;
+        }
     }
 
     .headline {
 
         &--h1 {
             font-size: $h1-font-size-mobile;
-            font-weight: 900;
-            padding-top: 38px;
-            padding-bottom: 38px;
         }
 
         &--h2 {
             font-size: $h2-font-size-mobile;
-            padding-top: 38px;
         }
 
         &--h3 {
-            font-weight: normal;
-            font-size: $h2-font-size-mobile;
-            padding-top: 28px;
-            padding-bottom: 11px;
+            font-size: $h3-font-size-mobile;
+        }
+
+        &--work {
+            width: 265px;
         }
     }
 
     .text {
         width: 100%;
         padding: 0 20px;
-        padding-top: 32px;
-        line-height: 24px;
     }
 }

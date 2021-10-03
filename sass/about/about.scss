@@ -39,3 +39,46 @@
         }
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 568px) {
+
+    .skills {
+        flex-flow: column;
+        padding-top: 60px;
+    
+        &__item {
+            @include flex();
+            flex-flow: column; 
+            width: 380px;
+            padding-bottom: 60px;
+        }
+    }
+    
+    .tools {
+        @include flex();
+        flex-flow: wrap;
+        padding-top: 80px;
+    
+        &__item {
+            width: 80px;
+            height: 80px;
+            margin-right: 60px;
+    
+            &:last-child {
+                margin-right: 0;
+            }
+    
+            &--figma {
+                background: $dark-grey url('../static/images/SVG/sprite.svg') no-repeat 0 -78px;
+            }
+    
+            &--photoshop {
+                background: $dark-grey url('../static/images/SVG/sprite.svg') no-repeat -80px -78px;
+            }
+    
+            &--illustrator {
+                background: $dark-grey url('../static/images/SVG/sprite.svg') no-repeat -160px -78px;
+            }
+        }
+    }
+}
