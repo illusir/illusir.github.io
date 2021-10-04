@@ -49,36 +49,19 @@
         &__item {
             @include flex();
             flex-flow: column; 
-            width: 380px;
-            padding-bottom: 60px;
+            width: 100%;
+            padding-bottom: 40px;
         }
     }
     
     .tools {
-        @include flex();
-        flex-flow: wrap;
-        padding-top: 80px;
-    
+        flex-flow: row;
+        justify-content: space-between;
+        padding-top: 30px;
+
         &__item {
-            width: 80px;
-            height: 80px;
-            margin-right: 60px;
-    
-            &:last-child {
-                margin-right: 0;
-            }
-    
-            &--figma {
-                background: $dark-grey url('../static/images/SVG/sprite.svg') no-repeat 0 -78px;
-            }
-    
-            &--photoshop {
-                background: $dark-grey url('../static/images/SVG/sprite.svg') no-repeat -80px -78px;
-            }
-    
-            &--illustrator {
-                background: $dark-grey url('../static/images/SVG/sprite.svg') no-repeat -160px -78px;
-            }
+            margin-right: 0;
         }
+    
     }
 }

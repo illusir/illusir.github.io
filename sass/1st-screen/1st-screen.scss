@@ -51,5 +51,25 @@
 /* mobile */
 
 @media screen and (min-width: 320px) and (max-width: 568px) {
+    .headline-field {
+        @include flex();
+        flex-flow: column;
+    
+        &__headline {
+            width: 100%;
+            padding-bottom: 20px;
+        }
+    
+    }
 
+    .top-info {
+        flex-flow: column;
+        padding-top: 40px;
+    
+        &__notes {
+            width: 100%;
+            margin-right: 0;
+            padding-bottom: 20px;
+        }
+    }
 }

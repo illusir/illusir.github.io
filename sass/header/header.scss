@@ -43,4 +43,11 @@
         background: url('../static/images/SVG/sprite.svg') no-repeat -51px -1px;
     }
 
+    .nav {
+
+        &--bottom {
+            margin-bottom: 20px;
+        }
+    }
+
 }
