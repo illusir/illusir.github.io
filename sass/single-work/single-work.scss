@@ -70,5 +70,9 @@
     .bottom-notes {
         padding: 0 20px;
         box-sizing: border-box;
+
+        &__note {
+            padding-bottom: 40px;
+        }
     }
 }
