@@ -165,6 +165,10 @@
             height: 100%;
             margin-bottom: 30px;
         }
+
+        &__picture img {
+            width: 100vw;
+        }
     
         &__notes {
             padding: 0 34px 30px 34px;
