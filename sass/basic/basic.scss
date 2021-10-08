@@ -185,3 +185,72 @@ body {
         padding: 0 20px;
     }
 }
+
+/* tablet */
+
+@media screen and (min-width: 568px) and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        padding: 80px 34px;
+        box-sizing: border-box;
+
+        &--header {
+            padding: 15px 34px;
+        }
+
+        &--1st-screen {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        &--1st-screen-internal {
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+
+        &--works {
+            padding: 0 0 80px 0;
+        }
+
+        &--single-work {
+            padding: 0 0 40px 0;
+        }
+
+        &--about {
+            padding-top: 80px;
+        }
+
+        &--footer {
+            padding: 40px 34px;
+        }
+
+    }
+
+    .headline {
+
+        &--h1 {
+            font-size: $h1-font-size-mobile;
+        }
+
+        &--h1-internal {
+            font-size: $h1-font-size-mobile-internal;
+        }
+
+        &--h2 {
+            font-size: $h2-font-size-mobile;
+        }
+
+        &--h3 {
+            font-size: $h3-font-size-mobile;
+        }
+
+        &--work {
+            width: 648px;
+        }
+    }
+
+    .text {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
