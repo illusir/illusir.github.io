@@ -121,7 +121,7 @@ body {
 @media screen and (min-width: 320px) and (max-width: 568px) {
 
     .container {
-        width: 100%;
+        width: 100vw;
         padding: 80px 20px;
         box-sizing: border-box;
 
@@ -190,7 +190,7 @@ body {
 
 @media screen and (min-width: 568px) and (max-width: 1024px) {
     .container {
-        width: 100%;
+        width: 100vw;
         padding: 80px 34px;
         box-sizing: border-box;
 
@@ -245,7 +245,7 @@ body {
         }
 
         &--work {
-            width: 648px;
+            width: 646px;
         }
     }
 
