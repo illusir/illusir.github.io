@@ -82,6 +82,31 @@
 /* tablet */
 
 @media screen and (min-width: 568px) and (max-width: 1024px) {
+    .project-notes {
+        width: 100%;
+        margin-bottom: 40px;
+        padding: 0 34px;
+        box-sizing: border-box;
+    }
+
+    .pictures {
+        flex-flow: column;
     
+        &__full {
+            width: 100vw;
+            height: 460px;
+        }
+    
+    }
+
+    .bottom-notes {
+        padding: 0 34px;
+        box-sizing: border-box;
+
+        &__note {
+            padding-bottom: 40px;
+        }
+    }
 }
+
 

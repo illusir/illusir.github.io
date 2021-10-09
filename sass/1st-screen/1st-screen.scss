@@ -81,5 +81,28 @@
 /* tablet */
 
 @media screen and (min-width: 568px) and (max-width: 1024px) {
+    .headline-field {
+        @include flex();
+        flex-flow: column;
     
+        &__headline {
+            width: 100%;
+            padding-bottom: 20px;
+        }
+    
+    }
+
+    .top-info {
+        padding-top: 40px;
+    
+        &__notes {
+            width: 100%;
+            margin-right: 20px;
+            padding-bottom: 30px;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+    }
 }
