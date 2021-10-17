@@ -11,7 +11,7 @@
     &__full {
         width: 100%;
         height: 660px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         background-color: $dark-grey;
 
         &--first-1 {
@@ -26,6 +26,10 @@
 
         &--third-1 {
             background: url("../static/images/images/portfolio/austin-wellness/third.jpg") no-repeat center;
+            background-size: cover;
+        }
+        &--fourth-1 {
+            background: url("../static/images/images/portfolio/austin-wellness/fourth.jpg") no-repeat center;
             background-size: cover;
         }
 
