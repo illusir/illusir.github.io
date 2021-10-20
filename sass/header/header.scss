@@ -57,7 +57,10 @@
 
     .nav__link { 
         margin-left: 25px;
-    
+        
+        &--bottom {
+            margin-left: 0;
+        }
     }
 
 }
