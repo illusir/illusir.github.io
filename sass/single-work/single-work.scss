@@ -14,6 +14,8 @@
         margin-bottom: 30px;
         background-color: $dark-grey;
 
+        /*first work*/
+
         &--first-1 {
             background: url("../static/images/images/portfolio/austin-wellness/first.jpg") no-repeat center;
             background-size: cover;
@@ -30,6 +32,27 @@
         }
         &--fourth-1 {
             background: url("../static/images/images/portfolio/austin-wellness/fourth.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        /*second work*/
+
+        &--first-2 {
+            background: url("../static/images/images/portfolio/axiom/first.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        &--second-2 {
+            background: url("../static/images/images/portfolio/axiom/second.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        &--third-2 {
+            background: url("../static/images/images/portfolio/axiom/third.jpg") no-repeat center;
+            background-size: cover;
+        }
+        &--fourth-2 {
+            background: url("../static/images/images/portfolio/axiom/fourth.jpg") no-repeat center;
             background-size: cover;
         }
 
@@ -67,7 +90,20 @@
         &:hover .icon {
                 background: $white url('../static/images/SVG/sprite.svg') no-repeat -187px 0;
         }
+
+        &--first {
+            opacity: 0.1;
+            cursor: default;
+
+            &:hover .icon {
+                background: $black url('../static/images/SVG/sprite.svg') no-repeat -87px 0;
+        }
+        }
     }
+}
+
+.other-work-link {
+    text-decoration: none;
 }
 
 .icon {
