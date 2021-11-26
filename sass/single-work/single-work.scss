@@ -16,8 +16,15 @@
 
         /*page scroll*/
             @include flex ();
-            &--page-scroll {
+            &--page-scroll-1 {
                 background: url("../static/images/images/portfolio/austin-wellness/scroll.jpg") no-repeat center;
+                background-size: cover;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &--page-scroll-2 {
+                background: url("../static/images/images/portfolio/axiom/scroll.jpg") no-repeat center;
                 background-size: cover;
                 justify-content: center;
                 align-items: center;
@@ -41,6 +48,11 @@
         }
         &--fourth-1 {
             background: url("../static/images/images/portfolio/austin-wellness/fourth.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        &--pages-1 {
+            background: url("../static/images/images/portfolio/austin-wellness/pages.jpg") no-repeat center;
             background-size: cover;
         }
 
@@ -125,7 +137,7 @@
           }
 
         &--img {
-            max-width: 100%;
+            width: 100%;
             height: auto;
             vertical-align: middle;
         }
