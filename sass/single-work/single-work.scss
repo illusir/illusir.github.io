@@ -30,6 +30,13 @@
                 align-items: center;
             }
 
+            &--page-scroll-3 {
+                background: url("../static/images/images/portfolio/austin-area/scroll.jpg") no-repeat center;
+                background-size: cover;
+                justify-content: center;
+                align-items: center;
+            }
+
         /*first work*/
 
         &--first-1 {
@@ -72,29 +79,35 @@
             background: url("../static/images/images/portfolio/axiom/third.jpg") no-repeat center;
             background-size: cover;
         }
+
         &--fourth-2 {
             background: url("../static/images/images/portfolio/axiom/fourth.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        &--pages-2 {
+            background: url("../static/images/images/portfolio/axiom/pages.jpg") no-repeat center;
             background-size: cover;
         }
 
         /*third work*/
 
         &--first-3 {
-            background: url("../static/images/images/portfolio/united-hail/first.jpg") no-repeat center;
+            background: url("../static/images/images/portfolio/austin-area/first.jpg") no-repeat center;
             background-size: cover;
         }
 
         &--second-3 {
-            background: url("../static/images/images/portfolio/united-hail/second.jpg") no-repeat center;
+            background: url("../static/images/images/portfolio/austin-area/second.jpg") no-repeat center;
             background-size: cover;
         }
 
         &--third-3 {
-            background: url("../static/images/images/portfolio/united-hail/third.jpg") no-repeat center;
+            background: url("../static/images/images/portfolio/austin-area/third.jpg") no-repeat center;
             background-size: cover;
         }
         &--fourth-3 {
-            background: url("../static/images/images/portfolio/united-hail/fourth.jpg") no-repeat center;
+            background: url("../static/images/images/portfolio/austin-area/fourth.jpg") no-repeat center;
             background-size: cover;
         }
 
