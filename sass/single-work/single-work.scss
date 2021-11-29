@@ -127,12 +127,13 @@
 /*Mac*/
 
 .mac {
-    width: 75.8%;
-    height: 80%;
+    width: 82.8%;
+    height: 87%;
     background: url("../static/images/images/portfolio/austin-wellness/mac.png") no-repeat center;
     background-size: contain;
     position: relative;
     display: inline-block;
+    margin-top: 3%;
 
     &__content-area {
         position: absolute;
@@ -147,11 +148,11 @@
           }
 
           &::-webkit-scrollbar-track {
-            background: #dfdfdf;
+            background: #d8d8d8;
           }
 
           &::-webkit-scrollbar-thumb {
-            background: #888;
+            background: rgb(100, 100, 100);
           }
 
         &--img {
