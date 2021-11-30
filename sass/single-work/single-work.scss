@@ -37,6 +37,13 @@
                 align-items: center;
             }
 
+            &--page-scroll-4 {
+                background: url("../static/images/images/portfolio/game-7/scroll.jpg") no-repeat center;
+                background-size: cover;
+                justify-content: center;
+                align-items: center;
+            }
+
         /*first work*/
 
         &--first-1 {
@@ -111,8 +118,8 @@
             background-size: cover;
         }
 
-        &--pages-3 {
-            background: url("../static/images/images/portfolio/austin-area/pages.jpg") no-repeat center;
+        &--pages-4 {
+            background: url("../static/images/images/portfolio/game-7/pages.jpg") no-repeat center;
             background-size: cover;
         }
 
