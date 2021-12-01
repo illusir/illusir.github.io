@@ -118,10 +118,37 @@
             background-size: cover;
         }
 
+        &--pages-3 {
+            background: url("../static/images/images/portfolio/austin-area/pages.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        /*fourth work*/
+
+        &--first-4 {
+            background: url("../static/images/images/portfolio/game-7/first.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        &--second-4 {
+            background: url("../static/images/images/portfolio/game-7/second.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        &--third-4 {
+            background: url("../static/images/images/portfolio/game-7/third.jpg") no-repeat center;
+            background-size: cover;
+        }
+        &--fourth-4 {
+            background: url("../static/images/images/portfolio/game-7/fourth.jpg") no-repeat center;
+            background-size: cover;
+        }
+
         &--pages-4 {
             background: url("../static/images/images/portfolio/game-7/pages.jpg") no-repeat center;
             background-size: cover;
         }
+
 
 
         &:last-child {
