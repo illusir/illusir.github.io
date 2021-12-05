@@ -44,6 +44,13 @@
                 align-items: center;
             }
 
+            &--page-scroll-5 {
+                background: url("../static/images/images/portfolio/reptichip/scroll.jpg") no-repeat center;
+                background-size: cover;
+                justify-content: center;
+                align-items: center;
+            }
+
         /*first work*/
 
         &--first-1 {
@@ -149,6 +156,31 @@
             background-size: cover;
         }
 
+        /*fifth work*/
+
+        &--first-5 {
+            background: url("../static/images/images/portfolio/reptichip/first.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        &--second-5 {
+            background: url("../static/images/images/portfolio/game-7/second.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        &--third-5 {
+            background: url("../static/images/images/portfolio/game-7/third.jpg") no-repeat center;
+            background-size: cover;
+        }
+        &--fourth-5 {
+            background: url("../static/images/images/portfolio/game-7/fourth.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        &--pages-5 {
+            background: url("../static/images/images/portfolio/reptichip/pages.jpg") no-repeat center;
+            background-size: cover;
+        }
 
 
         &:last-child {
