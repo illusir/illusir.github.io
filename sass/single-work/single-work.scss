@@ -51,6 +51,13 @@
                 align-items: center;
             }
 
+            &--page-scroll-6 {
+                background: url("../static/images/images/portfolio/colorado-wealth/scroll.jpg") no-repeat center;
+                background-size: cover;
+                justify-content: center;
+                align-items: center;
+            }
+
         /*first work*/
 
         &--first-1 {
@@ -183,6 +190,33 @@
         }
 
 
+        /*sixth work*/
+
+        &--first-5 {
+            background: url("../static/images/images/portfolio/reptichip/first.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        &--second-5 {
+            background: url("../static/images/images/portfolio/reptichip/second.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        &--third-5 {
+            background: url("../static/images/images/portfolio/reptichip/third.jpg") no-repeat center;
+            background-size: cover;
+        }
+        &--fourth-5 {
+            background: url("../static/images/images/portfolio/reptichip/fourth.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        &--pages-6 {
+            background: url("../static/images/images/portfolio/colorado-wealth/pages.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+
         &:last-child {
             margin-bottom: 0;
         }
@@ -194,7 +228,7 @@
 
 .mac {
     width: 82.8%;
-    height: 87%;
+    height: 87.1%;
     background: url("../static/images/images/portfolio/austin-wellness/mac.png") no-repeat center;
     background-size: contain;
     position: relative;
