@@ -7,6 +7,10 @@
     &--bottom {
         justify-content: center;
     }
+
+    &--404 {
+        justify-content: center;
+    }
 }
 
 /* mobile */
@@ -16,6 +20,10 @@
         flex-flow: column;
         width: 100%;
         align-items: flex-start;
+
+        &--404 {
+            align-items: center;
+        }
     }
 }
 
@@ -26,6 +34,10 @@
         flex-flow: column;
         width: 100%;
         align-items: flex-start;
+
+        &--404 {
+            align-items: center;
+        }
     }
 }
 

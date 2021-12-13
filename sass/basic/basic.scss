@@ -3,6 +3,13 @@ body {
     width: 100%;
 }
 
+#body-404 {
+    height: 100vh;
+    @include flex();
+    flex-flow: column;
+    justify-content: space-between;
+}
+
 *{
     margin: 0;
     font-family: $font-stack;
@@ -36,7 +43,6 @@ body {
     &--single-work {
         padding-top: 0;
     }
-
 }
 
 .link {
@@ -65,7 +71,6 @@ body {
         &--internal {
             background: url('../static/images/SVG/sprite.svg') no-repeat -23px -159px;
         }
-
     }
 
     &__font {
@@ -75,7 +80,42 @@ body {
         font-weight: bold;
         letter-spacing: 2px;
     }
+
+    &__svg {
+        width: 473px;
+        height: 165px;
+        margin-bottom: 30px;
+
+        &--eye {
+            background: url('../static/images/SVG/404-1.svg') no-repeat;
+            animation: blink 2.5s infinite;
+            position: relative;
+        }
+
+        &--numbers {
+            background: url('../static/images/SVG/404-0.svg') no-repeat;
+            position: absolute;
+        }
+    }
+
+    &--404 {
+        flex-flow: column;
+    }
+
 }
+
+@keyframes blink {
+    90% {
+      transform: none;
+      animation-timing-function: ease-in;
+    }
+    93% {
+      transform: translateY(3px) scaleY(0.1)
+    }
+    100% {
+      animation-timing-function: ease-out;
+    }
+  }
 
 .headline {
     text-transform: uppercase;
@@ -182,6 +222,17 @@ body {
 
         &--work {
             width: 265px;
+        }
+    }
+
+    .note-field {
+        &__svg {
+            width: 335px;
+            height: 117px;
+        }
+
+        &__font {
+            text-align: center;
         }
     }
 
