@@ -48,6 +48,12 @@ body {
 .link {
     text-decoration: none;
     color: $white;
+
+    &--team {
+        &:hover {
+            border-bottom: 1px solid $white;
+        }
+    }
 }
 
 .note-field {
