@@ -15,7 +15,7 @@
 .tools {
     @include flex();
     flex-flow: wrap;
-    padding-top: 80px;
+    padding-top: 60px;
 
     &__item {
         width: 80px;
@@ -47,8 +47,6 @@
         padding-top: 60px;
     
         &__item {
-            @include flex();
-            flex-flow: column; 
             width: 100%;
             padding-bottom: 40px;
         }
@@ -69,5 +67,9 @@
 /* tablet */
 
 @media screen and (min-width: 568px) and (max-width: 1024px) {
-   
+    .skills {
+        &__item {
+            width: 280px;
+        }
+    }
 }

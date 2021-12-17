@@ -64,6 +64,13 @@
                 justify-content: center;
                 align-items: center;
             }
+
+            &--page-scroll-8 {
+                background: url("../static/images/images/portfolio/smart-air/scroll.jpg") no-repeat center;
+                background-size: cover;
+                justify-content: center;
+                align-items: center;
+            }
             
 
         /*first work*/
@@ -251,6 +258,31 @@
             background-size: cover;
         }
 
+        /*eight work*/
+
+        &--first-8 {
+            background: url("../static/images/images/portfolio/smart-air/first.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        &--second-7 {
+            background: url("../static/images/images/portfolio/usa-triathlon/second.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        &--third-8 {
+            background: url("../static/images/images/portfolio/smart-air/third.jpg") no-repeat center;
+            background-size: cover;
+        }
+        &--fourth-8 {
+            background: url("../static/images/images/portfolio/smart-air/fourth.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        &--pages-8 {
+            background: url("../static/images/images/portfolio/smart-air/pages.jpg") no-repeat center;
+            background-size: cover;
+        }
 
 
         &:last-child {

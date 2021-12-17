@@ -74,9 +74,14 @@ body {
             background: url('../static/images/SVG/sprite.svg') no-repeat -45px -159px;
         }
 
+        &--contact {
+            background: url('../static/images/SVG/sprite.svg') no-repeat -67px -159px;
+        }
+
         &--internal {
             background: url('../static/images/SVG/sprite.svg') no-repeat -23px -159px;
         }
+
     }
 
     &__font {
