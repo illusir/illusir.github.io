@@ -265,8 +265,8 @@
             background-size: cover;
         }
 
-        &--second-7 {
-            background: url("../static/images/images/portfolio/usa-triathlon/second.jpg") no-repeat center;
+        &--second-8 {
+            background: url("../static/images/images/portfolio/smart-air/second.jpg") no-repeat center;
             background-size: cover;
         }
 
@@ -364,7 +364,16 @@
 
             &:hover .icon {
                 background: $black url('../static/images/SVG/sprite.svg') no-repeat -87px 0;
+            }
         }
+
+        &--last {
+            opacity: 0.1;
+            cursor: default;
+
+            &:hover .icon {
+                background: $black url('../static/images/SVG/sprite.svg') no-repeat -87px 0;
+            }
         }
     }
 }
