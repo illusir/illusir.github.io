@@ -31,6 +31,10 @@
         height: 445px;
         margin-bottom: 30px;
         overflow: hidden;
+
+        &--no-people {
+            margin-bottom: 0;
+        }    
     }
 
     &__picture img {
