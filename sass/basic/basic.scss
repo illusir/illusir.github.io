@@ -10,6 +10,13 @@ body {
     justify-content: space-between;
 }
 
+#body-fun {
+    height: 100vh;
+    @include flex();
+    flex-flow: column;
+    justify-content: space-between;
+}
+
 *{
     margin: 0;
     font-family: $font-stack;
@@ -90,6 +97,10 @@ body {
         text-transform: uppercase;
         font-weight: bold;
         letter-spacing: 2px;
+
+        &--fun {
+            padding-top: 20px;
+        }
     }
 
     &__svg {
@@ -110,6 +121,10 @@ body {
     }
 
     &--404 {
+        flex-flow: column;
+    }
+
+    &--fun {
         flex-flow: column;
     }
 
@@ -244,6 +259,10 @@ body {
 
         &__font {
             text-align: center;
+
+            &--fun {
+                text-align: left;
+            }
         }
     }
 
