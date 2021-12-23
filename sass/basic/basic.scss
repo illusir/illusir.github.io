@@ -16,11 +16,11 @@ body {
     font-size: $basic-font-size;
     color: $white;
     scroll-behavior: smooth;
-    line-height: 140%;
+    line-height: 150%;
 }
 
 ::selection {
-    background: $dark-grey;
+    background: #353535;
   }
 
 .container {

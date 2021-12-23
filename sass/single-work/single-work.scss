@@ -292,6 +292,18 @@
 
 }
 
+.work-info {
+    @include flex();
+    justify-content: space-between; 
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 80px;
+
+    &__text {
+        width: 620px;
+    }
+}
+
 /*Mac*/
 
 .mac {
@@ -451,11 +463,24 @@
             }
         }
     }
+
+    .work-info {
+        flex-flow: column; 
+        padding: 20px 20px 40px;
+        box-sizing: border-box;
+    
+        &__text {
+            width: 100%;
+            padding-top: 30px;
+        }
+    }
+    
 }
 
 /* tablet */
 
 @media screen and (min-width: 568px) and (max-width: 1024px) {
+
     .project-notes {
         width: 100%;
         margin-bottom: 40px;
@@ -485,6 +510,17 @@
     .other-works {
         padding: 80px 34px 0;
         overflow: hidden;
+    }
+
+    .work-info {
+        flex-flow: column; 
+        padding: 34px 34px 60px;
+        box-sizing: border-box;
+    
+        &__text {
+            width: 100%;
+            padding-top: 30px;
+        }
     }
 
 }
