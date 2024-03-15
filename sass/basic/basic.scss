@@ -1,5 +1,8 @@
 body {
     background: #000;
+    background-image: url('./../static/images/images/background/bg2-min.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 100%;
 }
 
@@ -16,7 +19,7 @@ body {
     font-size: $basic-font-size;
     color: $white;
     scroll-behavior: smooth;
-    line-height: 150%;
+    line-height: 160%;
 }
 
 ::selection {
@@ -194,13 +197,11 @@ body {
         }
 
         &--1st-screen {
-            padding-top: 80px;
-            padding-bottom: 80px;
+            padding: 140px 20px 20px 20px;
         }
 
         &--1st-screen-internal {
-            padding-top: 20px;
-            padding-bottom: 40px;
+            padding: 80px 20px 20px 20px;
         }
 
         &--works {
@@ -287,7 +288,7 @@ body {
 
         &--1st-screen {
             padding-top: 80px;
-            padding-bottom: 80px;
+            padding-bottom: 20px;
         }
 
         &--1st-screen-internal {

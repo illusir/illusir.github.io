@@ -13,6 +13,14 @@
     font-size: 14px;
     font-weight: bold;
 
+    &--menu {
+        display:none;
+    }
+
+    &--dropdown {
+        display: none;
+    }
+
     &:first-child {
         margin-left: 0;
     }
@@ -31,6 +39,26 @@
 
 }
 
+.dropdown {
+    @include flex ();
+    position: absolute;
+    top: 66px; 
+    left: 0;
+    width: 100vw;
+    background-color: $dark-grey;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px 30px 20px;
+    box-sizing: border-box;
+    display: none;
+    z-index: 100;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+}
+
 .logo {
     height: 60px;
     width: 47px;
@@ -41,14 +69,35 @@
 
 @media screen and (min-width: 320px) and (max-width: 568px) {
 
+    /* disable scrolling on menu opening
+    
+        body:has(#toggle:checked) { 
+        overflow: hidden 
+        }*/ 
+
+        .header {
+            background-color: rgba(0,0,0, .7);
+            position: fixed;
+            top: 0;
+            z-index: 100;
+        }
+
     .header__content {
         width: 100%;
+    }
+
+    #toggle:checked ~ .dropdown {
+        display: block;
     }
 
     .logo {
         height: 46px;
         width: 36px;
         background: url('../static/images/SVG/sprite.svg') no-repeat -51px -1px;
+    }
+
+    .container--header:has(#toggle:checked) { 
+        background: $dark-grey;
     }
 
     .nav {
@@ -60,6 +109,30 @@
 
     .nav__link { 
         margin-left: 20px;
+        display: none;
+
+        &--menu {
+            display: block;
+            margin-left: 0;
+            border-bottom: 1px solid $white;
+        }
+
+        &--dropdown {
+            display: block;
+            margin-left: 0;
+            font-size: $h3-font-size-mobile;
+            padding: 20px 0 20px 0;
+            border-bottom: 1px solid $white;
+
+            &:last-child {
+                padding-bottom: 0;
+                border-bottom: 0;
+            }
+
+            &:first-child {
+                padding-top: 0;
+            }
+        }
         
         &--bottom {
             margin-left: 0;

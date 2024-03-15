@@ -37,6 +37,14 @@
         &--illustrator {
             background: $dark-grey url('../static/images/SVG/sprite.svg') no-repeat -160px -78px;
         }
+
+        &--ue {
+            background: $dark-grey url('../static/images/SVG/sprite.svg') no-repeat 0 -180px;
+        }
+
+        &--blender {
+            background: $dark-grey url('../static/images/SVG/sprite.svg') no-repeat -80px -180px;
+        }
     }
 }
 
@@ -53,12 +61,21 @@
     }
     
     .tools {
-        flex-flow: row;
-        justify-content: space-between;
+        flex-flow: wrap;
+        justify-content: left;
         padding-top: 30px;
 
         &__item {
-            margin-right: 0;
+            margin: 0 20px 20px 0;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-left: 0;
+                margin-bottom: 0;
+            }
         }
     
     }
